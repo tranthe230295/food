@@ -1,0 +1,328 @@
+@media (min-width: 992px) {
+    .nav-item {
+        position: relative;
+    }
+    .nav-item .sub-menu {
+        list-style: none;
+        opacity: 0;
+        top: 80px;
+        transition: all 0.3s ease;
+        visibility: hidden;
+        height: auto;
+        position: absolute;
+        z-index: 10000;
+    }
+    .nav-item:hover .sub-menu {
+        opacity: 1;
+        top: 60px;
+        visibility: visible;
+    }
+    .nav-item .sub-menu .sub-menu {
+        top: 80px;
+        left: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+    .nav-item .sub-menu li:hover .sub-menu {
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-item .sub-menu {
+        background-color: #ffffff;
+        min-width: 160px;
+        padding: 5px;
+        box-shadow: 0 2px 3px rgb(0 0 0 / 15%);
+    }
+    .header-main .main-nav .navbar-nav .nav-item .sub-menu li a {
+        color: #333 !important;
+        font-weight: 500;
+        text-transform: uppercase;
+        white-space: nowrap;
+        padding: 6px 14px 6px 7px;
+        font-size: 0.9em;
+        line-height: 20px;
+    }
+    .header-main .main-nav .navbar-nav .nav-item .sub-menu li:hover {
+        background: #f4f4f4;
+    }
+    .header-main .main-nav .navbar-nav .nav-item .sub-menu li {
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .header-main .main-nav .navbar-nav .nav-item .sub-menu li:last-child {
+        border: unset;
+    }
+    .navbar-brand.mobile {
+        display: none;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar-brand img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1326px !important;
+    }
+    .header-main .main-nav .navbar-collapse {
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-main .main-nav .navbar-nav>.nav-item>a.nav-link {
+        padding: 38px 8px;
+    }
+}
+
+@media (max-width: 998px) {
+    .navbar .navbar-brand {
+        display: none;
+    }
+    .main-nav {
+        position: relative;
+    }
+    .navbar-toggler-icon i {
+        color: #0270BA;
+    }
+    .header-button.mobile {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .header-button.mobile .cart-header {
+        position: relative;
+    }
+    .mobile-wrapper {
+        width: 100%;
+    }
+    .main-nav .navbar .navbar-collapse.mobile {
+        position: fixed;
+        height: 100%;
+        width: 80%;
+        background: #fff;
+        top: 0;
+        left: -1000px;
+        z-index: 1000000;
+        transition: all 0.3s;
+    }
+    .main-nav .navbar .collapse {
+        display: block;
+    }
+    .overlay-mobile.show {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #0e0e0e82;
+        z-index: 100;
+        display: block;
+        top: 0;
+        left: 0;
+    }
+    .main-nav .navbar .navbar-collapse.mobile.active {
+        left: 0px;
+    }
+    .header-wrapper .header-main .main-nav .navbar-nav {
+        margin-top: 30px;
+    }
+    .header-main .main-nav .navbar-nav .nav-item a.nav-link {
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .main-nav {
+        display: flex;
+    }
+    a.navbar-brand.mobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar-toggler:focus {
+        outline: 0;
+        box-shadow: unset;
+        border: unset;
+    }
+    .header-main .main-nav .navbar-nav>.nav-item>a.nav-link {
+        padding: 8px 10px;
+    }
+    .header-main .main-nav li.nav-item.header-search {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .header-main .main-nav .navbar-nav {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+    .header-main .main-nav .navbar-nav>.nav-item.active {
+        background: unset !important;
+    }
+    .header-main .main-nav .navbar-nav>.nav-item:hover {
+        background-color: #0692d3 !important;
+    }
+    .header-main .main-nav .navbar-nav>.nav-item:hover a {
+        color: #fff !important;
+    }
+    .header-top {
+        display: none;
+    }
+    .mega-menu ul {
+        padding-left: 10px;
+    }
+    .mega-menu ul {
+        display: none;
+    }
+    .navbar-nav .nav-item .sub-menu {
+        display: none;
+        padding-left: 30px;
+    }
+    .main-nav .navbar-toggler {
+        position: absolute;
+        left: 0px;
+        top: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: fadeInDown 0.3s ease forwards;
+    }
+    @keyframes fadeInDown {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@media(max-width:998px) {
+    .navbar-brand {
+        margin: auto;
+        max-width: 82px;
+    }
+    .banner-inner .banner-label {
+        position: unset;
+    }
+    .header-bottom {
+        background: #d12028;
+        position: absolute;
+        top: 26px;
+        z-index: 10000;
+        left: 10px;
+        border: unset;
+    }
+    .header-bottom .navbar-toggler-icon {
+        filter: invert(1);
+    }
+    .offcanvas.offcanvas-start {
+        width: 80%;
+    }
+    .bg-trust {
+        background-size: cover;
+    }
+    .offcanvas-body .nav-item {
+        border-bottom: 1px dashed #ccc;
+    }
+    .offcanvas-body .nav-item:last-child {
+        border: unset;
+    }
+    .header-bottom {
+        background: unset !important;
+    }
+    .header-search {
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 1px solid #e8e8e8;
+    }
+    .navbar-nav>.nav-item>a {
+        color: #333;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-review-wrapper .btn {
+        width: 168px;
+    }
+    .cat-name::before {
+        content: unset;
+    }
+    ul#pills-tab {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    #pills-tab .nav-link.active::after {
+        bottom: 0;
+    }
+    .messenger,
+    .footer-social {
+        text-align: center;
+    }
+    .breadcrumb {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .breadcrumb-item+.breadcrumb-item {
+        padding-left: 1.3rem;
+    }
+    .filter-item {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .filter-checkbox .checkbox-styled {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .partner-slide-next {
+        right: -2%;
+    }
+    .partner-slide-prev {
+        left: -2%;
+    }
+    ul#pills-tab-2 {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .section-title {
+        font-size: 22px;
+    }
+    .btn-buynow,
+    .btn-hotline {
+        padding: 10px 26px;
+    }
+    .commit-table td {
+        width: 100%;
+        display: block;
+    }
+    .review-wrapper::after {
+        content: unset;
+    }
+    nav[aria-label="Page navigation"] {
+        text-align: center;
+    }
+    .pagination {
+        justify-content: center;
+    }
+    .post-box .media-body p {
+        display: none;
+    }
+    .first-post .post-box .box-image {
+        height: 100%;
+    }
+    .messenger-success {
+        padding: 20px;
+    }
+}
